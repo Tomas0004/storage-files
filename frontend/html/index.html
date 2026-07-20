@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Archivos</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📤 Subir Archivos</h1>
+        <p class="subtitle">Selecciona archivos para subir al servidor</p>
+
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📁</div>
+            <div class="upload-text">
+                Arrastra tus archivos aquí o <strong>haz clic para seleccionar</strong>
+            </div>
+            <input type="file" id="fileInput" multiple>
+        </div>
+
+        <div class="file-info" id="fileInfo">
+            <div id="fileList"></div>
+            <div class="progress-bar" id="progressBar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn-primary" id="uploadBtn" disabled>📤 Subir</button>
+            <button class="btn-secondary" id="clearBtn">🗑️ Limpiar</button>
+            <button class="btn-success" id="listBtn">📋 Listar</button>
+        </div>
+
+        <div class="response" id="response"></div>
+
+        <div class="files-list" id="filesList" style="display: none;">
+            <h3>📂 Archivos en el servidor</h3>
+            <div id="filesContainer"></div>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
