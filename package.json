@@ -2,25 +2,23 @@
   "name": "storage-files",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomas0004/storage-files.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.10.0",
-      "onFail": "download"
-    }
-  },
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Tomas0004/storage-files/issues"
+  },
+  "homepage": "https://github.com/Tomas0004/storage-files#readme",
   "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "morgan": "^1.11.0",
-    "multer": "^2.2.0"
+    "express": "^5.2.1"
   }
 }
